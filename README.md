@@ -9,8 +9,8 @@ This repository serves as a practical portfolio of my learning journey in buildi
 
 ## 🎓 Learning Source
 
-A huge thank you to **Ed Donner** and his Udemy course **Agentic AI Engineering**.  
-These projects were created while practising concepts learned from the course.  
+A huge thank you to [@ed-donner](https://github.com/ed-donner) and his Udemy course *Agentic AI Engineering*.
+These projects were created while practising concepts learned from the course.
 Ed’s clear explanations and real-world examples made a big difference in understanding how to design and implement intelligent agents.
 
 ---
