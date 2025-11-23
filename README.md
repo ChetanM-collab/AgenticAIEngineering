@@ -1,7 +1,7 @@
 # AgenticAIEngineering
 
 A collection of small, focused projects exploring modern Agentic AI concepts.  
-Each folder contains an independent project demonstrating different areas of agent-based LLM systems such as MCP tools, LLM routing, API integrations, autonomous workflows, and interactive UIs.
+Each folder contains an independent project demonstrating different areas of agent-based LLM systems.
 
 This repository serves as a practical portfolio of my learning journey in building real Agentic AI systems.
 
@@ -23,22 +23,8 @@ Each project exists in its own folder with a dedicated README:
 project_1/
 project_2/
 project_3/
-...
-```
 
 ---
-
-## 🧠 Technologies Commonly Used
-
-- Python  
-- OpenAI & Anthropic SDKs  
-- FastAPI  
-- Gradio  
-- MCP / FastMCP  
-- Pydantic  
-- httpx  
-- AsyncIO  
-- Jupyter notebooks  
 
 (Each project defines its own dependencies.)
 
@@ -52,6 +38,3 @@ project_3/
 
 ---
 
-## 📜 License
-
-MIT License © 2025
