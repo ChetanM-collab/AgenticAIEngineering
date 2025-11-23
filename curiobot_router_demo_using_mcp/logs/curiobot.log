@@ -1,0 +1,331 @@
+2025-11-16 20:48:19,927 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-16 20:48:32,415 INFO [curiobot.api.main_agent] ********** question=Please give me latest news about Westpac
+2025-11-16 20:48:32,415 INFO [curiobot.api.main_agent] Creating Agent
+2025-11-16 20:48:32,416 INFO [curiobot.api.main_agent] Running Agent
+2025-11-16 20:48:35,811 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-16 20:48:38,438 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-16 20:48:38,877 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-16 20:48:44,218 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-16 20:48:44,230 INFO [curiobot.api.main_agent] Agent tool=get_news
+2025-11-16 20:48:44,231 INFO [curiobot.api.main_agent] Agent args={'query': 'Westpac'}
+2025-11-16 20:48:44,231 INFO [curiobot.api.main_agent] Agent summary=Here are the latest news highlights about Westpac: 1) There's a cashback offer on Bunnings Gift Cards at ShopBack using Westpac cards. 2) A new report discusses Westpac's 2025 digital transformation strategy focused on enhancing digital banking platforms and innovation programs. 3) The latest Westpac Melbourne Institute Consumer Sentiment Index shows a rise in consumer confidence. 4) There are bonus cashback deals with Westpac cards at certain retailers via Apple Pay. For details, you can visit the respective news sources.
+2025-11-16 20:48:44,231 INFO [curiobot.api.main_agent] Agent raw_tool_output keys=['totalResults', 'articles']
+2025-11-16 20:48:50,500 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-16 20:52:11,060 INFO [curiobot.api.main_agent] ********** question=Please give me latest news about Westpac
+2025-11-16 20:52:11,061 INFO [curiobot.api.main_agent] Creating Agent
+2025-11-16 20:52:11,062 INFO [curiobot.api.main_agent] Running Agent
+2025-11-16 20:52:12,165 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-16 20:52:16,644 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-16 20:52:22,827 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-16 20:52:22,830 INFO [curiobot.api.main_agent] Agent tool=get_news
+2025-11-16 20:52:22,830 INFO [curiobot.api.main_agent] Agent args={'query': 'Westpac'}
+2025-11-16 20:52:22,830 INFO [curiobot.api.main_agent] Agent summary=Here are some of the latest news highlights about Westpac: 1. Westpac offers upsized 2.5% cashback plus 1% on Bunnings gift cards via ShopBack, ending tonight. 2. A new report details Westpac's digital transformation strategy for 2025 focusing on enhancing digital platforms, wealth management, tech partnerships, and innovative products. 3. The Westpac Melbourne Institute Consumer Sentiment Index indicates rising consumer confidence ahead of Black Friday sales. 4. There are cashback offers linked to Westpac cards via Apple Pay at BWS stores. These updates reflect Westpac's ongoing initiatives in digital innovation, consumer engagement, and promotional offers.
+2025-11-16 20:52:22,830 INFO [curiobot.api.main_agent] Agent raw_tool_output keys=['totalResults', 'articles']
+2025-11-16 20:52:27,324 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-16 20:52:49,198 INFO [curiobot.api.main_agent] ********** question=What is the latest news about Westpac ?
+2025-11-16 20:52:49,198 INFO [curiobot.api.main_agent] Creating Agent
+2025-11-16 20:52:49,199 INFO [curiobot.api.main_agent] Running Agent
+2025-11-16 20:52:51,102 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-16 20:52:53,664 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-16 20:52:54,027 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-16 20:52:55,845 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-16 20:52:55,847 INFO [curiobot.api.main_agent] Agent tool=none
+2025-11-16 20:52:55,847 INFO [curiobot.api.main_agent] Agent args={}
+2025-11-16 20:52:55,847 INFO [curiobot.api.main_agent] Agent summary=I encountered an error while trying to retrieve the latest news about Westpac. Please try again later or rephrase your question.
+2025-11-16 20:52:55,847 INFO [curiobot.api.main_agent] Agent raw_tool_output keys=None
+2025-11-16 20:53:00,500 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-16 21:02:50,498 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-16 21:02:52,938 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-16 21:08:06,261 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-16 21:08:08,010 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-16 21:13:41,901 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-16 21:13:43,555 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-16 21:13:48,564 INFO [curiobot.api.main_agent] Question=What is the latest news about Westpac ?
+2025-11-16 21:13:48,565 INFO [curiobot.api.main_agent] Creating Agent
+2025-11-16 21:13:48,566 INFO [curiobot.api.main_agent] Running Agent
+2025-11-16 21:13:48,820 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-16 21:13:54,507 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-16 21:13:55,474 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-16 21:13:55,489 INFO [curiobot.api.main_agent] Agent tool=get_news
+2025-11-16 21:13:55,489 INFO [curiobot.api.main_agent] Agent args={'query': 'Westpac'}
+2025-11-16 21:13:55,489 INFO [curiobot.api.main_agent] Agent summary=Here is the latest news about Westpac based on recent reports. Unfortunately, there was an error processing the request with an incorrect parameter, but I can provide general news on Westpac by fetching the most recent articles related to Westpac.
+2025-11-16 21:13:55,489 INFO [curiobot.api.main_agent] Agent raw_tool_output keys=None
+2025-11-16 21:14:00,830 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-16 21:18:20,221 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-16 21:18:21,789 ERROR [openai.agents] Error initializing MCP server: Connection closed
+2025-11-16 21:18:34,466 ERROR [openai.agents] Error initializing MCP server: Connection closed
+2025-11-16 21:19:40,702 ERROR [openai.agents] Error initializing MCP server: Connection closed
+2025-11-16 21:19:45,997 ERROR [openai.agents] Error initializing MCP server: Connection closed
+2025-11-16 21:20:04,757 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-16 21:20:12,456 INFO [curiobot.api.main_agent] Question=What is the latest news about Westpac ?
+2025-11-16 21:20:12,456 INFO [curiobot.api.main_agent] Creating Agent
+2025-11-16 21:20:12,458 INFO [curiobot.api.main_agent] Running Agent
+2025-11-16 21:20:14,601 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-16 21:20:18,468 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-16 21:20:20,286 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-16 21:20:22,173 INFO [curiobot.api.main_agent] Agent tool=get_news
+2025-11-16 21:20:22,173 INFO [curiobot.api.main_agent] Agent args={'query': 'Westpac'}
+2025-11-16 21:20:22,173 INFO [curiobot.api.main_agent] Agent summary=Fetching the latest news about Westpac to provide you with current updates and important details.
+2025-11-16 21:20:22,173 INFO [curiobot.api.main_agent] Agent raw_tool_output keys=None
+2025-11-16 21:20:24,594 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-16 21:24:32,213 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-16 21:24:33,619 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-16 21:24:50,445 INFO [curiobot.api.main_agent] Question=What's the latest news about Westpac ?
+2025-11-16 21:24:50,445 INFO [curiobot.api.main_agent] Creating Agent
+2025-11-16 21:24:50,446 INFO [curiobot.api.main_agent] Running Agent
+2025-11-16 21:24:52,516 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-16 21:24:56,627 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-16 21:25:04,389 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-16 21:25:04,400 INFO [curiobot.api.main_agent] Agent tool=get_news
+2025-11-16 21:25:04,400 INFO [curiobot.api.main_agent] Agent args={'topic': 'Westpac'}
+2025-11-16 21:25:04,400 INFO [curiobot.api.main_agent] Agent summary=The latest news about Westpac includes a digital transformation strategy report highlighting growth opportunities in enhancing digital platforms, expanding wealth management, and technology partnerships. There are also promotions related to Westpac cashback offers on gift cards and Apple Pay bonuses. Additionally, the Westpac Melbourne Institute Consumer Sentiment Index reports increased consumer confidence, which may impact retail sales.
+2025-11-16 21:25:04,400 INFO [curiobot.api.main_agent] Agent raw_tool_output keys=['totalResults', 'articles']
+2025-11-16 21:25:07,938 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-16 21:43:26,442 INFO [curiobot.api.main_agent] Question=What's the latest news about Westpac ?
+2025-11-16 21:43:26,442 INFO [curiobot.api.main_agent] Creating Agent
+2025-11-16 21:43:26,445 INFO [curiobot.api.main_agent] Running Agent
+2025-11-16 21:43:28,208 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-16 21:43:31,345 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-16 21:43:31,982 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-16 21:43:37,240 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-16 21:43:37,249 INFO [curiobot.api.main_agent] Agent tool=get_news
+2025-11-16 21:43:37,250 INFO [curiobot.api.main_agent] Agent args={'topic': 'Westpac'}
+2025-11-16 21:43:37,251 INFO [curiobot.api.main_agent] Agent summary=The latest news about Westpac includes a variety of topics: a cashback offer on Bunnings Gift Cards linked to Westpac cards, a digital transformation strategy report highlighting Westpac's focus on enhancing digital platforms and innovation programs, consumer sentiment data from the Westpac Melbourne Institute Consumer Sentiment Index suggesting more confident consumers, and promotional cashback offers via Apple Pay using Westpac and partner bank cards. Key articles come from sources like Ozbargain.com.au, GlobeNewswire, and Biztoc.com, published mostly around mid-November 2025.
+2025-11-16 21:43:37,251 INFO [curiobot.api.main_agent] Agent raw_tool_output keys=['totalResults', 'articles']
+2025-11-16 21:43:42,734 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-16 21:44:52,608 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-16 21:44:54,742 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-16 21:44:55,170 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-16 21:44:56,415 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-16 21:45:14,806 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-16 21:45:16,326 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-16 21:45:26,141 INFO [curiobot.api.main_agent] Question=What's the latest news about Westpac ?
+2025-11-16 21:45:26,142 INFO [curiobot.api.main_agent] Creating Agent
+2025-11-16 21:45:26,143 INFO [curiobot.api.main_agent] Running Agent
+2025-11-16 21:45:27,945 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-16 21:45:32,602 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-16 21:45:37,708 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-16 21:45:37,716 INFO [curiobot.api.main_agent] Agent tool=get_news
+2025-11-16 21:45:37,716 INFO [curiobot.api.main_agent] Agent args={'topic': 'Westpac'}
+2025-11-16 21:45:37,717 INFO [curiobot.api.main_agent] Agent summary=Here are the latest news articles about Westpac: 1) A cashback offer on Bunnings Gift Cards with Westpac cards at ShopBack ending midnight today, with up to 3.5% discount. 2) A report on Westpac's 2025 digital transformation strategy focusing on enhancing digital platforms and expanding services. 3) The Westpac Melbourne Institute Consumer Sentiment Index shows a rise in consumer confidence ahead of Black Friday sales. 4) Other articles include cashback offers related to Westpac cards and general market info around banking. These provide insights into current promotions, strategic moves, and consumer sentiment linked to Westpac.
+2025-11-16 21:45:37,717 INFO [curiobot.api.main_agent] Agent raw_tool_output keys=['totalResults', 'articles']
+2025-11-16 21:45:38,730 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-16 21:45:58,281 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-16 21:46:00,527 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-22 20:42:19,461 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-22 20:43:33,261 INFO [curiobot.api.main_agent] Question=what's the latest news about Westpac today ?
+2025-11-22 20:43:33,261 INFO [curiobot.api.main_agent] Creating Agent
+2025-11-22 20:43:33,262 INFO [curiobot.api.main_agent] Running Agent
+2025-11-22 20:43:36,434 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-22 20:43:39,715 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-22 20:43:41,135 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-22 20:43:46,378 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-22 20:43:46,386 INFO [curiobot.api.main_agent] Agent tool=get_news
+2025-11-22 20:43:46,386 INFO [curiobot.api.main_agent] Agent args={'topic': 'Westpac'}
+2025-11-22 20:43:46,386 INFO [curiobot.api.main_agent] Agent summary=The latest news about Westpac includes a mission ordered by the Westpac CEO to cut wasteful technology spending as part of their Unite system rationalisation project. This initiative aims to reduce excessive and wasteful tech expenses. Additionally, there is also news coverage about a 3.3% ASX dividend stock related to retirement safety nets. Other news includes general financial updates, but the headline initiative is the tech spend cut mission by Westpac's CEO.
+2025-11-22 20:43:46,386 INFO [curiobot.api.main_agent] Agent raw_tool_output keys=['totalResults', 'articles']
+2025-11-22 20:43:52,681 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-22 20:46:54,320 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-22 20:46:55,256 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-22 20:46:56,801 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-22 20:46:57,741 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-22 20:47:08,623 INFO [curiobot.api.main_agent] Question=what's the latest news about Westpac today ?
+2025-11-22 20:47:08,623 INFO [curiobot.api.main_agent] Creating Agent
+2025-11-22 20:47:08,624 INFO [curiobot.api.main_agent] Running Agent
+2025-11-22 20:47:11,848 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-22 20:47:14,540 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-22 20:47:25,190 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-22 20:47:26,231 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-22 20:47:26,244 INFO [curiobot.api.main_agent] Agent tool=get_news
+2025-11-22 20:47:26,244 INFO [curiobot.api.main_agent] Agent args={'query': 'Westpac'}
+2025-11-22 20:47:26,244 INFO [curiobot.api.main_agent] Agent summary=The latest news about Westpac includes a report on Westpac Banking Group's mission to cut excessive and wasteful technology spending as it advances its Unite system rationalisation project. The CEO is pushing for consultants to face tougher competition from internal leaders. This news was covered by iTnews on November 20, 2025. Additionally, there are other related articles including an ASX dividend stock discussion and cashback offers linked to Westpac, but the main focus is on the tech spending cut mission.
+2025-11-22 20:47:26,244 INFO [curiobot.api.main_agent] Agent raw_tool_output keys=['totalResults', 'articles']
+2025-11-22 20:47:30,701 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-22 20:51:47,839 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-22 20:51:48,785 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-22 20:51:56,754 INFO [curiobot.api.main_agent] Question=what's the latest news about Westpac today ?
+2025-11-22 20:51:56,754 INFO [curiobot.api.main_agent] Creating Agent
+2025-11-22 20:51:56,755 INFO [curiobot.api.main_agent] Running Agent
+2025-11-22 20:52:00,048 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-22 20:52:02,631 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-22 20:52:07,105 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-22 20:52:07,107 INFO [curiobot.api.main_agent] Agent tool=get_news
+2025-11-22 20:52:07,107 INFO [curiobot.api.main_agent] Agent args={'topic': 'Westpac'}
+2025-11-22 20:52:07,107 INFO [curiobot.api.main_agent] Agent summary=The latest news about Westpac includes a focus on reducing wasteful technology spending as part of an institution-wide mission led by the Westpac CEO. This is linked to their Unite system rationalisation project. One noteworthy article from iTnews highlights this effort, emphasizing tougher competition for consultants from internal leaders. Additionally, there is news on a 3.3% ASX dividend stock as a retirement safety net, which may be of interest to investors. For more details, news sources like Motley Fool Australia and iTnews offer in-depth coverage.
+2025-11-22 20:52:07,107 INFO [curiobot.api.main_agent] Agent raw_tool_output keys=['totalResults', 'articles']
+2025-11-22 20:52:08,069 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-22 20:54:16,984 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-22 20:54:17,925 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-22 20:54:31,069 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-22 20:54:32,009 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-22 20:54:40,152 INFO [curiobot.api.main_agent] Question=what's the latest news about Westpac today ?
+2025-11-22 20:54:40,152 INFO [curiobot.api.main_agent] Creating Agent
+2025-11-22 20:54:40,153 INFO [curiobot.api.main_agent] Running Agent
+2025-11-22 20:54:42,940 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-22 20:54:45,656 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-22 20:54:50,753 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-22 20:54:50,756 INFO [curiobot.api.main_agent] Agent tool=get_news
+2025-11-22 20:54:50,756 INFO [curiobot.api.main_agent] Agent args={'query': 'Westpac'}
+2025-11-22 20:54:50,756 INFO [curiobot.api.main_agent] Agent summary=The latest news about Westpac includes the following highlights: Westpac CEO has ordered a mission to cut wasteful technology spending as part of a broader system rationalisation project (reported by iTnews). Additionally, there is an article about a 3.3% ASX dividend stock considered a retirement safety net, mentioning Westpac contextually (Motley Fool Australia). Other related news includes cashback offers that mention Westpac and broader financial forecasts. For detailed articles, you can visit the sources iTnews and Motley Fool Australia.
+2025-11-22 20:54:50,756 INFO [curiobot.api.main_agent] Agent raw_tool_output keys=['totalResults', 'articles']
+2025-11-22 20:54:51,306 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-22 20:55:56,642 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-22 20:55:57,585 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-22 20:56:03,217 INFO [curiobot.api.main_agent] Question=what's the latest news about Westpac today ?
+2025-11-22 20:56:03,217 INFO [curiobot.api.main_agent] Creating Agent
+2025-11-22 20:56:03,218 INFO [curiobot.api.main_agent] Running Agent
+2025-11-22 20:56:06,026 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-22 20:56:09,088 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-22 20:56:14,601 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-22 20:56:17,628 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-22 20:56:17,631 INFO [curiobot.api.main_agent] Agent tool=get_news
+2025-11-22 20:56:17,631 INFO [curiobot.api.main_agent] Agent args={'topic': 'Westpac'}
+2025-11-22 20:56:17,631 INFO [curiobot.api.main_agent] Agent summary=The latest news about Westpac includes a major initiative by Westpac Banking Group to cut excessive and wasteful technology spending as part of its Unite system rationalisation project. This mission, ordered by the CEO, aims to increase competition between external consultants and internal leaders. The most recent articles discussing Westpac's financial and operational movements were published within the last couple of days from sources like iTnews and Motley Fool Australia.
+2025-11-22 20:56:17,631 INFO [curiobot.api.main_agent] Agent raw_tool_output keys=['totalResults', 'articles']
+2025-11-22 20:56:20,444 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-22 20:56:38,279 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-22 20:56:39,216 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-22 20:56:40,129 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-22 20:56:41,054 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-22 20:56:48,478 INFO [curiobot.api.main_agent] Question=what's the latest news about Westpac today ?
+2025-11-22 20:56:48,478 INFO [curiobot.api.main_agent] Creating Agent
+2025-11-22 20:56:48,479 INFO [curiobot.api.main_agent] Running Agent
+2025-11-22 20:56:51,226 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-22 20:56:53,999 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-22 20:56:58,383 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-22 20:56:58,393 INFO [curiobot.api.main_agent] Agent tool=get_news
+2025-11-22 20:56:58,394 INFO [curiobot.api.main_agent] Agent args={'topic': 'Westpac'}
+2025-11-22 20:56:58,394 INFO [curiobot.api.main_agent] Agent summary=The latest news about Westpac includes a focus on cutting wasteful tech spending as part of their Unite system rationalisation project. The Westpac CEO has ordered a mission to reduce excessive technology expenditures. Other news involves a 3.3% ASX dividend stock related to Westpac, and some cashback offers linked with Westpac cards. For details, articles are from sources like iTnews and Motley Fool Australia dated around November 20-21, 2025.
+2025-11-22 20:56:58,394 INFO [curiobot.api.main_agent] Agent raw_tool_output keys=['totalResults', 'articles']
+2025-11-22 20:57:00,063 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-22 20:59:09,581 INFO [curiobot.api.main_agent] Question=What's the weather in Sydney tomorrow ?
+2025-11-22 20:59:09,581 INFO [curiobot.api.main_agent] Creating Agent
+2025-11-22 20:59:09,581 INFO [curiobot.api.main_agent] Running Agent
+2025-11-22 20:59:12,233 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-22 20:59:12,700 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-22 20:59:13,072 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-22 20:59:17,725 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-22 20:59:17,726 INFO [curiobot.api.main_agent] Agent tool=get_weather
+2025-11-22 20:59:17,726 INFO [curiobot.api.main_agent] Agent args={'location': 'Sydney', 'when': 'tomorrow'}
+2025-11-22 20:59:17,726 INFO [curiobot.api.main_agent] Agent summary=The weather forecast for Sydney tomorrow is currently unavailable due to a technical issue. Please try again later.
+2025-11-22 20:59:17,726 INFO [curiobot.api.main_agent] Agent raw_tool_output keys=None
+2025-11-22 20:59:18,729 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-22 21:01:13,619 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-22 21:01:14,575 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-22 21:01:43,079 INFO [curiobot.api.main_agent] Question=What's the news about Bank of America ?
+2025-11-22 21:01:43,079 INFO [curiobot.api.main_agent] Creating Agent
+2025-11-22 21:01:43,080 INFO [curiobot.api.main_agent] Running Agent
+2025-11-22 21:01:45,826 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-22 21:01:48,949 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-22 21:01:49,711 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-22 21:01:58,195 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-22 21:01:58,202 INFO [curiobot.api.main_agent] Agent tool=get_news
+2025-11-22 21:01:58,202 INFO [curiobot.api.main_agent] Agent args={'topic': 'Bank of America'}
+2025-11-22 21:01:58,202 INFO [curiobot.api.main_agent] Agent summary=Recent news about Bank of America includes a variety of topics, though the top articles do not directly mention Bank of America specifically. Notable headlines include: 'Saylor’s Strategy Under Threat' regarding exposure to cryptocurrency market downturn (newsBTC), the 'AI Orchestration Global Forecast Report 2025' highlighting market growth to $30.23 billion by 2030 (GlobeNewswire), and other general financial and technology news. The news reflects broader market and financial trends that may impact institutions like Bank of America.
+2025-11-22 21:01:58,202 INFO [curiobot.api.main_agent] Agent raw_tool_output keys=['totalResults', 'articles']
+2025-11-22 21:02:00,467 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-23 13:20:17,583 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 13:26:15,537 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 13:26:16,985 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 13:26:16,985 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 13:26:16,985 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 13:26:16,985 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 13:26:16,986 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 13:26:16,989 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 13:26:16,989 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 13:26:16,989 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 13:26:16,990 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 13:32:36,061 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 13:32:37,340 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 13:32:37,340 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 13:32:37,340 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 13:32:37,341 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 13:32:37,345 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 13:32:37,345 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 13:32:37,345 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 13:32:37,345 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 13:32:37,348 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:02:41,766 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:02:43,291 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:02:43,291 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:02:43,291 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:02:43,291 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:02:43,291 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:02:43,296 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:02:43,296 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:02:43,296 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:02:43,297 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:03:01,389 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:03:02,529 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:03:02,532 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:03:02,533 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:03:02,533 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:03:02,533 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:03:02,536 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:03:02,537 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:03:02,537 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:03:02,779 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:03:29,559 INFO [curiobot.api.main_agent] Question=What's the latest news about Westpac
+2025-11-23 14:03:29,559 INFO [curiobot.api.main_agent] Creating Agent
+2025-11-23 14:03:29,560 INFO [curiobot.api.main_agent] Running Agent
+2025-11-23 14:03:33,323 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-23 14:03:35,659 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-23 14:03:41,825 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-23 14:03:45,792 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-23 14:03:45,798 INFO [curiobot.api.main_agent] Agent tool=get_news
+2025-11-23 14:03:45,799 INFO [curiobot.api.main_agent] Agent args={'query': 'Westpac'}
+2025-11-23 14:03:45,799 INFO [curiobot.api.main_agent] Agent summary=The latest news about Westpac includes several updates: 1) Westpac Altitude Black Card offers 120,000 points with a $6k spend in 120 days and 40,000 additional points if the account is open for over 12 months. 2) A secret promo page allows existing customers to get $0 first-year annual fee on Westpac Altitude Qantas Black and Platinum cards, with a $75 yearly fee. 3) Westpac CEO has ordered a mission to cut wasteful technology spending as part of an ambitious system rationalisation project called Unite. These updates indicate current promotions and strategic moves within Westpac's technology and customer offerings.
+2025-11-23 14:03:45,799 INFO [curiobot.api.main_agent] Agent raw_tool_output keys=['totalResults', 'articles']
+2025-11-23 14:03:47,657 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-23 14:08:38,152 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:08:39,690 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:08:39,690 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:08:39,690 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:08:39,690 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:08:39,694 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:08:39,694 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:08:39,694 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:08:39,699 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:08:39,702 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:09:21,478 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:09:22,528 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:09:22,530 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:09:22,530 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:09:22,531 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:09:22,532 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:09:22,533 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:09:22,534 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:09:22,535 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:09:22,787 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:11:16,392 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:11:17,401 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:11:17,404 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:11:17,404 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:11:17,405 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:11:17,407 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:11:17,408 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:11:17,413 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:11:17,416 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:11:17,767 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:11:37,666 INFO [curiobot.api.main_agent] Question=whats the latest news about Westpac?
+2025-11-23 14:11:37,666 INFO [curiobot.api.main_agent] Creating Agent
+2025-11-23 14:11:37,667 INFO [curiobot.api.main_agent] Running Agent
+2025-11-23 14:11:40,983 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-23 14:11:43,546 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-23 14:11:49,421 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-23 14:11:52,253 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-11-23 14:11:52,256 INFO [curiobot.api.main_agent] Agent tool=get_news
+2025-11-23 14:11:52,257 INFO [curiobot.api.main_agent] Agent args={'query': 'Westpac'}
+2025-11-23 14:11:52,257 INFO [curiobot.api.main_agent] Agent summary=The latest news about Westpac includes several updates: Westpac's Altitude Black Card is offering 120,000 points with a $200 fee for the first year for a $6k spend in 120 days, and 40,000 points with a $295 fee in the second year. There is also a secret promo page offering $0 first-year fee for certain cards for existing customers. Additionally, Westpac's CEO has ordered a mission to cut excessive and wasteful technology spending as part of a system rationalization project. These news items come from sources like Ozbargain and iTnews.
+2025-11-23 14:11:52,257 INFO [curiobot.api.main_agent] Agent raw_tool_output keys=['totalResults', 'articles']
+2025-11-23 14:11:55,186 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-11-23 14:16:02,281 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:16:03,750 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:16:03,751 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:16:03,751 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:16:03,752 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:16:03,752 INFO [curiobot.api.main_agent] [startup] MCP server started for FastAPI
+2025-11-23 14:16:03,756 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:16:03,756 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:16:03,756 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped
+2025-11-23 14:16:03,756 INFO [curiobot.api.main_agent] [shutdown] MCP server stopped

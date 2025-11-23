@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+httpx
+gradio==6.0.0
+openai
+python-dotenv
+pydantic
+mcp
+openai-agents

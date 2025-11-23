@@ -1,0 +1,458 @@
+2025-11-16 20:48:19,876 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-16 20:48:19,877 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-16 20:48:19,920 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-16 20:48:32,420 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-16 20:48:35,841 INFO [mcp.server.lowlevel.server] Processing request of type CallToolRequest
+2025-11-16 20:48:35,842 INFO [curiobot.curiobot_server] curio Bot MCP Sever - query tool invoked for question=latest news about Westpac
+2025-11-16 20:48:35,842 INFO [curiobot.router] LLMRouter.route called for question=latest news about Westpac
+2025-11-16 20:48:35,842 INFO [curiobot.router] LLMRouter.provider=openai
+2025-11-16 20:48:35,842 INFO [curiobot.router] LLMRouter - Calling OpenAI LLM with model=gpt-4o-mini
+2025-11-16 20:48:37,939 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-16 20:48:37,942 INFO [curiobot.router] LLMRouter plan={'tool': 'get_news', 'args': {'query': 'Westpac'}, 'reason': 'User requested the latest news about Westpac.'}
+2025-11-16 20:48:37,942 INFO [curiobot.curiobot_server] query.plan.toolname=get_news
+2025-11-16 20:48:37,942 INFO [curiobot.curiobot_server] query.plan.args={'query': 'Westpac'}
+2025-11-16 20:48:37,942 INFO [curiobot.curiobot_server] query: dispatching to get_news
+2025-11-16 20:48:37,942 INFO [curiobot.curiobot_server] curio Bot MCP Sever - get_news invoked, query=Westpac, freshness_days=3
+2025-11-16 20:48:38,426 INFO [httpx] HTTP Request: GET https://newsapi.org/v2/everything?q=Westpac&from=2025-11-13&sortBy=publishedAt&pageSize=5&language=en&apiKey=2fb7d40cd7564ada9d706309704ebac5 "HTTP/1.1 200 OK"
+2025-11-16 20:48:38,431 INFO [mcp.server.lowlevel.server] Warning: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-11-16 20:48:38,434 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-16 20:52:11,066 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-16 20:52:12,168 INFO [mcp.server.lowlevel.server] Processing request of type CallToolRequest
+2025-11-16 20:52:12,169 INFO [curiobot.curiobot_server] curio Bot MCP Sever - query tool invoked for question=Please give me latest news about Westpac
+2025-11-16 20:52:12,169 INFO [curiobot.router] LLMRouter.route called for question=Please give me latest news about Westpac
+2025-11-16 20:52:12,170 INFO [curiobot.router] LLMRouter.provider=openai
+2025-11-16 20:52:12,170 INFO [curiobot.router] LLMRouter - Calling OpenAI LLM with model=gpt-4o-mini
+2025-11-16 20:52:14,734 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-16 20:52:14,743 INFO [curiobot.router] LLMRouter plan={'tool': 'get_news', 'args': {'query': 'Westpac'}, 'reason': 'The user is looking for the latest news specifically about Westpac.'}
+2025-11-16 20:52:14,743 INFO [curiobot.curiobot_server] query.plan.toolname=get_news
+2025-11-16 20:52:14,743 INFO [curiobot.curiobot_server] query.plan.args={'query': 'Westpac'}
+2025-11-16 20:52:14,743 INFO [curiobot.curiobot_server] query: dispatching to get_news
+2025-11-16 20:52:14,743 INFO [curiobot.curiobot_server] curio Bot MCP Sever - get_news invoked, query=Westpac, freshness_days=3
+2025-11-16 20:52:15,363 INFO [httpx] HTTP Request: GET https://newsapi.org/v2/everything?q=Westpac&from=2025-11-13&sortBy=publishedAt&pageSize=5&language=en&apiKey=2fb7d40cd7564ada9d706309704ebac5 "HTTP/1.1 200 OK"
+2025-11-16 20:52:15,364 INFO [mcp.server.lowlevel.server] Warning: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-11-16 20:52:15,368 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-16 20:52:49,201 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-16 20:52:51,106 INFO [mcp.server.lowlevel.server] Processing request of type CallToolRequest
+2025-11-16 20:52:51,107 INFO [curiobot.curiobot_server] curio Bot MCP Sever - query tool invoked for question=What is the latest news about Westpac ?
+2025-11-16 20:52:51,107 INFO [curiobot.router] LLMRouter.route called for question=What is the latest news about Westpac ?
+2025-11-16 20:52:51,107 INFO [curiobot.router] LLMRouter.provider=openai
+2025-11-16 20:52:51,107 INFO [curiobot.router] LLMRouter - Calling OpenAI LLM with model=gpt-4o-mini
+2025-11-16 20:52:53,326 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-16 20:52:53,333 INFO [curiobot.router] LLMRouter plan={'tool': 'get_news', 'args': {'topic': 'Westpac'}, 'reason': 'The user is asking for the latest news, which requires the news tool.'}
+2025-11-16 20:52:53,334 INFO [curiobot.curiobot_server] query.plan.toolname=get_news
+2025-11-16 20:52:53,334 INFO [curiobot.curiobot_server] query.plan.args={'topic': 'Westpac'}
+2025-11-16 20:52:53,334 INFO [curiobot.curiobot_server] query: dispatching to get_news
+2025-11-16 20:52:53,341 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-16 21:02:52,888 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-16 21:02:52,888 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-16 21:02:52,931 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-16 21:08:07,965 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-16 21:08:07,965 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-16 21:08:08,004 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-16 21:13:43,475 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-16 21:13:43,476 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-16 21:13:43,542 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-16 21:13:48,569 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-16 21:13:48,848 INFO [mcp.server.lowlevel.server] Processing request of type CallToolRequest
+2025-11-16 21:13:48,849 INFO [curiobot.curiobot_server] curio Bot MCP Sever - query tool invoked for question=What is the latest news about Westpac ?
+2025-11-16 21:13:48,849 INFO [curiobot.router] LLMRouter.route called for question=What is the latest news about Westpac ?
+2025-11-16 21:13:48,849 INFO [curiobot.router] LLMRouter.provider=openai
+2025-11-16 21:13:48,849 INFO [curiobot.router] LLMRouter - Calling OpenAI LLM with model=gpt-4o-mini
+2025-11-16 21:13:51,506 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-16 21:13:51,519 INFO [curiobot.router] LLMRouter plan={'tool': 'get_news', 'args': {'topic': 'Westpac'}, 'reason': 'User is asking for the latest news related to Westpac.'}
+2025-11-16 21:13:51,520 INFO [curiobot.curiobot_server] query.plan.toolname=get_news
+2025-11-16 21:13:51,520 INFO [curiobot.curiobot_server] query.plan.args={'topic': 'Westpac'}
+2025-11-16 21:13:51,520 INFO [curiobot.curiobot_server] query: dispatching to get_news
+2025-11-16 21:13:51,524 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-16 21:18:21,645 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-16 21:18:21,645 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-16 21:18:34,349 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-16 21:18:34,349 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-16 21:20:04,710 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-16 21:20:04,713 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-16 21:20:04,751 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-16 21:20:12,461 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-16 21:20:14,633 INFO [mcp.server.lowlevel.server] Processing request of type CallToolRequest
+2025-11-16 21:20:14,634 INFO [curiobot.curiobot_server] curio Bot MCP Sever - query tool invoked for question=What is the latest news about Westpac ?
+2025-11-16 21:20:14,634 INFO [curiobot.router] LLMRouter.route called for question=What is the latest news about Westpac ?
+2025-11-16 21:20:14,634 INFO [curiobot.router] LLMRouter.provider=openai
+2025-11-16 21:20:14,634 INFO [curiobot.router] LLMRouter - Calling OpenAI LLM with model=gpt-4o-mini
+2025-11-16 21:20:17,502 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-16 21:20:17,504 INFO [curiobot.router] LLMRouter plan={'tool': 'get_news', 'args': {'topic': 'Westpac'}, 'reason': 'The user is asking for the latest news, which is best provided by the news tool.'}
+2025-11-16 21:20:17,504 INFO [curiobot.curiobot_server] query.plan.toolname=get_news
+2025-11-16 21:20:17,505 INFO [curiobot.curiobot_server] query.plan.args={'topic': 'Westpac'}
+2025-11-16 21:20:17,505 INFO [curiobot.curiobot_server] query: dispatching to get_news
+2025-11-16 21:20:17,508 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-16 21:20:20,296 INFO [mcp.server.lowlevel.server] Processing request of type CallToolRequest
+2025-11-16 21:20:20,296 INFO [curiobot.curiobot_server] curio Bot MCP Sever - query tool invoked for question=Latest news about Westpac
+2025-11-16 21:20:20,296 INFO [curiobot.router] LLMRouter.route called for question=Latest news about Westpac
+2025-11-16 21:20:20,296 INFO [curiobot.router] LLMRouter.provider=openai
+2025-11-16 21:20:20,296 INFO [curiobot.router] LLMRouter - Calling OpenAI LLM with model=gpt-4o-mini
+2025-11-16 21:20:21,690 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-16 21:20:21,692 INFO [curiobot.router] LLMRouter plan={'tool': 'get_news', 'args': {'query': 'Westpac'}, 'reason': 'User is requesting the latest news about a specific bank.'}
+2025-11-16 21:20:21,692 INFO [curiobot.curiobot_server] query.plan.toolname=get_news
+2025-11-16 21:20:21,692 INFO [curiobot.curiobot_server] query.plan.args={'query': 'Westpac'}
+2025-11-16 21:20:21,692 INFO [curiobot.curiobot_server] query: dispatching to get_news
+2025-11-16 21:20:21,692 INFO [curiobot.curiobot_server] curio Bot MCP Sever - get_news invoked, query=Westpac, freshness_days=3
+2025-11-16 21:20:22,167 INFO [httpx] HTTP Request: GET https://newsapi.org/v2/everything?q=Westpac&from=2025-11-13&sortBy=publishedAt&pageSize=5&language=en&apiKey=2fb7d40cd7564ada9d706309704ebac5 "HTTP/1.1 200 OK"
+2025-11-16 21:20:22,170 INFO [mcp.server.lowlevel.server] Warning: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-11-16 21:24:33,568 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-16 21:24:33,568 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-16 21:24:33,612 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-16 21:24:50,449 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-16 21:24:52,545 INFO [mcp.server.lowlevel.server] Processing request of type CallToolRequest
+2025-11-16 21:24:52,546 INFO [curiobot.curiobot_server] curio Bot MCP Sever - query tool invoked for question=What's the latest news about Westpac ?
+2025-11-16 21:24:52,546 INFO [curiobot.router] LLMRouter.route called for question=What's the latest news about Westpac ?
+2025-11-16 21:24:52,546 INFO [curiobot.router] LLMRouter.provider=openai
+2025-11-16 21:24:52,546 INFO [curiobot.router] LLMRouter - Calling OpenAI LLM with model=gpt-4o-mini
+2025-11-16 21:24:54,254 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-16 21:24:54,257 INFO [curiobot.router] LLMRouter plan={'tool': 'get_news', 'args': {'topic': 'Westpac'}, 'reason': 'User is seeking the latest news regarding Westpac.'}
+2025-11-16 21:24:54,257 INFO [curiobot.curiobot_server] query.plan.toolname=get_news
+2025-11-16 21:24:54,257 INFO [curiobot.curiobot_server] query.plan.args={'topic': 'Westpac'}
+2025-11-16 21:24:54,257 INFO [curiobot.curiobot_server] query: dispatching to get_news
+2025-11-16 21:24:54,257 INFO [curiobot.curiobot_server] curio Bot MCP Sever - get_news invoked, query=Westpac, freshness_days=3
+2025-11-16 21:24:54,727 INFO [httpx] HTTP Request: GET https://newsapi.org/v2/everything?q=Westpac&from=2025-11-13&sortBy=publishedAt&pageSize=5&language=en&apiKey=2fb7d40cd7564ada9d706309704ebac5 "HTTP/1.1 200 OK"
+2025-11-16 21:24:54,729 INFO [mcp.server.lowlevel.server] Warning: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-11-16 21:24:54,732 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-16 21:43:26,448 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-16 21:43:28,220 INFO [mcp.server.lowlevel.server] Processing request of type CallToolRequest
+2025-11-16 21:43:28,221 INFO [curiobot.curiobot_server] curio Bot MCP Sever - query tool invoked for question=What's the latest news about Westpac ?
+2025-11-16 21:43:28,221 INFO [curiobot.router] LLMRouter.route called for question=What's the latest news about Westpac ?
+2025-11-16 21:43:28,221 INFO [curiobot.router] LLMRouter.provider=openai
+2025-11-16 21:43:28,221 INFO [curiobot.router] LLMRouter - Calling OpenAI LLM with model=gpt-4o-mini
+2025-11-16 21:43:30,157 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-16 21:43:30,163 INFO [curiobot.router] LLMRouter plan={'tool': 'get_news', 'args': {'topic': 'Westpac'}, 'reason': 'User is asking for the latest news which is best retrieved from a news source.'}
+2025-11-16 21:43:30,164 INFO [curiobot.curiobot_server] query.plan.toolname=get_news
+2025-11-16 21:43:30,164 INFO [curiobot.curiobot_server] query.plan.args={'topic': 'Westpac'}
+2025-11-16 21:43:30,165 INFO [curiobot.curiobot_server] query: dispatching to get_news
+2025-11-16 21:43:30,165 INFO [curiobot.curiobot_server] curio Bot MCP Sever - get_news invoked, query=Westpac, freshness_days=3
+2025-11-16 21:43:30,629 INFO [httpx] HTTP Request: GET https://newsapi.org/v2/everything?q=Westpac&from=2025-11-13&sortBy=publishedAt&pageSize=5&language=en&apiKey=2fb7d40cd7564ada9d706309704ebac5 "HTTP/1.1 200 OK"
+2025-11-16 21:43:30,636 INFO [mcp.server.lowlevel.server] Warning: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-11-16 21:43:30,642 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-16 21:44:54,692 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-16 21:44:54,694 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-16 21:44:54,735 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-16 21:44:56,372 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-16 21:44:56,372 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-16 21:44:56,408 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-16 21:45:16,283 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-16 21:45:16,283 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-16 21:45:16,321 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-16 21:45:26,146 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-16 21:45:27,976 INFO [mcp.server.lowlevel.server] Processing request of type CallToolRequest
+2025-11-16 21:45:27,976 INFO [curiobot.curiobot_server] curio Bot MCP Sever - query tool invoked for question=What's the latest news about Westpac ?
+2025-11-16 21:45:27,976 INFO [curiobot.router] LLMRouter.route called for question=What's the latest news about Westpac ?
+2025-11-16 21:45:27,976 INFO [curiobot.router] LLMRouter.provider=openai
+2025-11-16 21:45:27,976 INFO [curiobot.router] LLMRouter - Calling OpenAI LLM with model=gpt-4o-mini
+2025-11-16 21:45:29,404 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-16 21:45:29,410 INFO [curiobot.router] LLMRouter plan={'tool': 'get_news', 'args': {'topic': 'Westpac'}, 'reason': 'User is requesting the latest news about Westpac.'}
+2025-11-16 21:45:29,411 INFO [curiobot.curiobot_server] query.plan.toolname=get_news
+2025-11-16 21:45:29,411 INFO [curiobot.curiobot_server] query.plan.args={'topic': 'Westpac'}
+2025-11-16 21:45:29,411 INFO [curiobot.curiobot_server] query: dispatching to get_news
+2025-11-16 21:45:29,411 INFO [curiobot.curiobot_server] curio Bot MCP Sever - get_news invoked, query=Westpac, freshness_days=3
+2025-11-16 21:45:29,913 INFO [httpx] HTTP Request: GET https://newsapi.org/v2/everything?q=Westpac&from=2025-11-13&sortBy=publishedAt&pageSize=5&language=en&apiKey=2fb7d40cd7564ada9d706309704ebac5 "HTTP/1.1 200 OK"
+2025-11-16 21:45:29,915 INFO [mcp.server.lowlevel.server] Warning: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-11-16 21:45:29,917 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-16 21:46:00,470 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-16 21:46:00,470 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-16 21:46:00,520 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-22 20:42:19,415 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-22 20:42:19,417 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-22 20:42:19,455 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-22 20:43:33,265 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-22 20:43:36,453 INFO [mcp.server.lowlevel.server] Processing request of type CallToolRequest
+2025-11-22 20:43:36,453 INFO [curiobot.curiobot_server] curio Bot MCP Sever - query tool invoked for question=what's the latest news about Westpac today ?
+2025-11-22 20:43:36,453 INFO [curiobot.router] LLMRouter.route called for question=what's the latest news about Westpac today ?
+2025-11-22 20:43:36,454 INFO [curiobot.router] LLMRouter.provider=openai
+2025-11-22 20:43:36,454 INFO [curiobot.router] LLMRouter - Calling OpenAI LLM with model=gpt-4o-mini
+2025-11-22 20:43:38,211 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 20:43:38,217 INFO [curiobot.router] LLMRouter plan={'tool': 'get_news', 'args': {'topic': 'Westpac'}, 'reason': 'User is asking for the latest news related to Westpac.'}
+2025-11-22 20:43:38,217 INFO [curiobot.curiobot_server] query.plan.toolname=get_news
+2025-11-22 20:43:38,217 INFO [curiobot.curiobot_server] query.plan.args={'topic': 'Westpac'}
+2025-11-22 20:43:38,217 INFO [curiobot.curiobot_server] query: dispatching to get_news
+2025-11-22 20:43:38,217 INFO [curiobot.curiobot_server] curio Bot MCP Sever - get_news invoked, query=Westpac, freshness_days=3
+2025-11-22 20:43:39,274 INFO [httpx] HTTP Request: GET https://newsapi.org/v2/everything?q=Westpac&from=2025-11-19&sortBy=publishedAt&pageSize=5&language=en&apiKey=2fb7d40cd7564ada9d706309704ebac5 "HTTP/1.1 200 OK"
+2025-11-22 20:43:39,277 INFO [mcp.server.lowlevel.server] Warning: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-11-22 20:43:39,279 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-22 20:46:55,221 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-22 20:46:55,221 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-22 20:46:55,251 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-22 20:46:57,705 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-22 20:46:57,706 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-22 20:46:57,736 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-22 20:47:08,625 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-22 20:47:11,872 INFO [mcp.server.lowlevel.server] Processing request of type CallToolRequest
+2025-11-22 20:47:11,872 INFO [curiobot.curiobot_server] curio Bot MCP Sever - query tool invoked for question=what's the latest news about Westpac today ?
+2025-11-22 20:47:11,872 INFO [curiobot.router] LLMRouter.route called for question=what's the latest news about Westpac today ?
+2025-11-22 20:47:11,873 INFO [curiobot.router] LLMRouter.provider=openai
+2025-11-22 20:47:11,873 INFO [curiobot.router] LLMRouter - Calling OpenAI LLM with model=gpt-4o-mini
+2025-11-22 20:47:19,011 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 20:47:19,013 INFO [curiobot.router] LLMRouter plan={'tool': 'get_news', 'args': {'query': 'Westpac'}, 'reason': 'User is looking for the latest news about Westpac.'}
+2025-11-22 20:47:19,013 INFO [curiobot.curiobot_server] query.plan.toolname=get_news
+2025-11-22 20:47:19,013 INFO [curiobot.curiobot_server] query.plan.args={'query': 'Westpac'}
+2025-11-22 20:47:19,013 INFO [curiobot.curiobot_server] query: dispatching to get_news
+2025-11-22 20:47:19,013 INFO [curiobot.curiobot_server] curio Bot MCP Sever - get_news invoked, query=Westpac, freshness_days=3
+2025-11-22 20:47:19,655 INFO [httpx] HTTP Request: GET https://newsapi.org/v2/everything?q=Westpac&from=2025-11-19&sortBy=publishedAt&pageSize=5&language=en&apiKey=2fb7d40cd7564ada9d706309704ebac5 "HTTP/1.1 200 OK"
+2025-11-22 20:47:19,656 INFO [mcp.server.lowlevel.server] Warning: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-11-22 20:47:19,658 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-22 20:51:48,750 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-22 20:51:48,750 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-22 20:51:48,780 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-22 20:51:56,756 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-22 20:52:00,064 INFO [mcp.server.lowlevel.server] Processing request of type CallToolRequest
+2025-11-22 20:52:00,064 INFO [curiobot.curiobot_server] curio Bot MCP Sever - query tool invoked for question=what's the latest news about Westpac today ?
+2025-11-22 20:52:00,064 INFO [curiobot.router] LLMRouter.route called for question=what's the latest news about Westpac today ?
+2025-11-22 20:52:00,064 INFO [curiobot.router] LLMRouter.provider=openai
+2025-11-22 20:52:00,064 INFO [curiobot.router] LLMRouter - Calling OpenAI LLM with model=gpt-4o-mini
+2025-11-22 20:52:01,892 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 20:52:01,899 INFO [curiobot.router] LLMRouter plan={'tool': 'get_news', 'args': {'topic': 'Westpac'}, 'reason': 'User is asking for the latest news, which requires current news updates.'}
+2025-11-22 20:52:01,899 INFO [curiobot.curiobot_server] query.plan.toolname=get_news
+2025-11-22 20:52:01,899 INFO [curiobot.curiobot_server] query.plan.args={'topic': 'Westpac'}
+2025-11-22 20:52:01,899 INFO [curiobot.curiobot_server] query: dispatching to get_news
+2025-11-22 20:52:01,899 INFO [curiobot.curiobot_server] curio Bot MCP Sever - get_news invoked, query=Westpac, freshness_days=3
+2025-11-22 20:52:02,969 INFO [httpx] HTTP Request: GET https://newsapi.org/v2/everything?q=Westpac&from=2025-11-19&sortBy=publishedAt&pageSize=5&language=en&apiKey=2fb7d40cd7564ada9d706309704ebac5 "HTTP/1.1 200 OK"
+2025-11-22 20:52:02,969 INFO [mcp.server.lowlevel.server] Warning: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-11-22 20:52:02,971 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-22 20:54:17,885 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-22 20:54:17,885 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-22 20:54:17,918 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-22 20:54:31,973 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-22 20:54:31,973 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-22 20:54:32,003 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-22 20:54:40,155 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-22 20:54:42,959 INFO [mcp.server.lowlevel.server] Processing request of type CallToolRequest
+2025-11-22 20:54:42,959 INFO [curiobot.curiobot_server] curio Bot MCP Sever - query tool invoked for question=what's the latest news about Westpac today ?
+2025-11-22 20:54:42,959 INFO [curiobot.router] LLMRouter.route called for question=what's the latest news about Westpac today ?
+2025-11-22 20:54:42,959 INFO [curiobot.router] LLMRouter.provider=openai
+2025-11-22 20:54:42,959 INFO [curiobot.router] LLMRouter - Calling OpenAI LLM with model=gpt-4o-mini
+2025-11-22 20:54:44,758 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 20:54:44,763 INFO [curiobot.router] LLMRouter plan={'tool': 'get_news', 'args': {'query': 'Westpac'}, 'reason': 'User is asking for the latest news.'}
+2025-11-22 20:54:44,763 INFO [curiobot.curiobot_server] query.plan.toolname=get_news
+2025-11-22 20:54:44,763 INFO [curiobot.curiobot_server] query.plan.args={'query': 'Westpac'}
+2025-11-22 20:54:44,763 INFO [curiobot.curiobot_server] query: dispatching to get_news
+2025-11-22 20:54:44,763 INFO [curiobot.curiobot_server] curio Bot MCP Sever - get_news invoked, query=Westpac, freshness_days=3
+2025-11-22 20:54:45,823 INFO [httpx] HTTP Request: GET https://newsapi.org/v2/everything?q=Westpac&from=2025-11-19&sortBy=publishedAt&pageSize=5&language=en&apiKey=2fb7d40cd7564ada9d706309704ebac5 "HTTP/1.1 200 OK"
+2025-11-22 20:54:45,824 INFO [mcp.server.lowlevel.server] Warning: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-11-22 20:54:45,826 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-22 20:55:57,547 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-22 20:55:57,547 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-22 20:55:57,580 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-22 20:56:03,220 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-22 20:56:06,044 INFO [mcp.server.lowlevel.server] Processing request of type CallToolRequest
+2025-11-22 20:56:06,044 INFO [curiobot.curiobot_server] curio Bot MCP Sever - query tool invoked for question=what's the latest news about Westpac today ?
+2025-11-22 20:56:06,044 INFO [curiobot.router] LLMRouter.route called for question=what's the latest news about Westpac today ?
+2025-11-22 20:56:06,044 INFO [curiobot.router] LLMRouter.provider=openai
+2025-11-22 20:56:06,044 INFO [curiobot.router] LLMRouter - Calling OpenAI LLM with model=gpt-4o-mini
+2025-11-22 20:56:09,508 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 20:56:09,514 INFO [curiobot.router] LLMRouter plan={'tool': 'get_news', 'args': {'topic': 'Westpac'}, 'reason': 'User is seeking the latest news related to Westpac.'}
+2025-11-22 20:56:09,514 INFO [curiobot.curiobot_server] query.plan.toolname=get_news
+2025-11-22 20:56:09,515 INFO [curiobot.curiobot_server] query.plan.args={'topic': 'Westpac'}
+2025-11-22 20:56:09,515 INFO [curiobot.curiobot_server] query: dispatching to get_news
+2025-11-22 20:56:09,515 INFO [curiobot.curiobot_server] curio Bot MCP Sever - get_news invoked, query=Westpac, freshness_days=3
+2025-11-22 20:56:09,895 INFO [httpx] HTTP Request: GET https://newsapi.org/v2/everything?q=Westpac&from=2025-11-19&sortBy=publishedAt&pageSize=5&language=en&apiKey=2fb7d40cd7564ada9d706309704ebac5 "HTTP/1.1 200 OK"
+2025-11-22 20:56:09,897 INFO [mcp.server.lowlevel.server] Warning: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-11-22 20:56:09,899 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-22 20:56:39,178 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-22 20:56:39,179 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-22 20:56:39,211 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-22 20:56:41,015 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-22 20:56:41,015 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-22 20:56:41,048 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-22 20:56:48,480 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-22 20:56:51,253 INFO [mcp.server.lowlevel.server] Processing request of type CallToolRequest
+2025-11-22 20:56:51,253 INFO [curiobot.curiobot_server] curio Bot MCP Sever - query tool invoked for question=what's the latest news about Westpac today ?
+2025-11-22 20:56:51,253 INFO [curiobot.router] LLMRouter.route called for question=what's the latest news about Westpac today ?
+2025-11-22 20:56:51,254 INFO [curiobot.router] LLMRouter.provider=openai
+2025-11-22 20:56:51,254 INFO [curiobot.router] LLMRouter - Calling OpenAI LLM with model=gpt-4o-mini
+2025-11-22 20:56:52,376 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 20:56:52,383 INFO [curiobot.router] LLMRouter plan={'tool': 'get_news', 'args': {'topic': 'Westpac'}, 'reason': 'The user is asking for the latest news, which is best served by the news tool.'}
+2025-11-22 20:56:52,384 INFO [curiobot.curiobot_server] query.plan.toolname=get_news
+2025-11-22 20:56:52,384 INFO [curiobot.curiobot_server] query.plan.args={'topic': 'Westpac'}
+2025-11-22 20:56:52,384 INFO [curiobot.curiobot_server] query: dispatching to get_news
+2025-11-22 20:56:52,384 INFO [curiobot.curiobot_server] curio Bot MCP Sever - get_news invoked, query=Westpac, freshness_days=3
+2025-11-22 20:56:52,776 INFO [httpx] HTTP Request: GET https://newsapi.org/v2/everything?q=Westpac&from=2025-11-19&sortBy=publishedAt&pageSize=5&language=en&apiKey=2fb7d40cd7564ada9d706309704ebac5 "HTTP/1.1 200 OK"
+2025-11-22 20:56:52,777 INFO [mcp.server.lowlevel.server] Warning: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-11-22 20:56:52,779 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-22 20:59:09,583 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-22 20:59:12,235 INFO [mcp.server.lowlevel.server] Processing request of type CallToolRequest
+2025-11-22 20:59:12,235 INFO [curiobot.curiobot_server] curio Bot MCP Sever - query tool invoked for question=What's the weather in Sydney tomorrow ?
+2025-11-22 20:59:12,235 INFO [curiobot.router] LLMRouter.route called for question=What's the weather in Sydney tomorrow ?
+2025-11-22 20:59:12,235 INFO [curiobot.router] LLMRouter.provider=openai
+2025-11-22 20:59:12,235 INFO [curiobot.router] LLMRouter - Calling OpenAI LLM with model=gpt-4o-mini
+2025-11-22 20:59:15,179 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 20:59:15,182 INFO [curiobot.router] LLMRouter plan={'tool': 'get_weather', 'args': {'location': 'Sydney', 'date': 'tomorrow'}, 'reason': 'The user is asking for the weather forecast, which requires weather data.'}
+2025-11-22 20:59:15,183 INFO [curiobot.curiobot_server] query.plan.toolname=get_weather
+2025-11-22 20:59:15,183 INFO [curiobot.curiobot_server] query.plan.args={'location': 'Sydney', 'date': 'tomorrow'}
+2025-11-22 20:59:15,183 INFO [curiobot.curiobot_server] query: dispatching to get_weather
+2025-11-22 20:59:15,186 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-22 21:01:14,540 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-22 21:01:14,540 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-22 21:01:14,570 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-22 21:01:43,082 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-22 21:01:45,845 INFO [mcp.server.lowlevel.server] Processing request of type CallToolRequest
+2025-11-22 21:01:45,845 INFO [curiobot.curiobot_server] curio Bot MCP Sever - query tool invoked for question=What's the news about Bank of America ?
+2025-11-22 21:01:45,845 INFO [curiobot.router] LLMRouter.route called for question=What's the news about Bank of America ?
+2025-11-22 21:01:45,845 INFO [curiobot.router] LLMRouter.provider=openai
+2025-11-22 21:01:45,845 INFO [curiobot.router] LLMRouter - Calling OpenAI LLM with model=gpt-4o-mini
+2025-11-22 21:01:47,126 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 21:01:47,128 INFO [curiobot.router] LLMRouter plan={'tool': 'get_news', 'args': {'topic': 'Bank of America'}, 'reason': 'User is asking for recent news related to Bank of America.'}
+2025-11-22 21:01:47,128 INFO [curiobot.curiobot_server] query.plan.toolname=get_news
+2025-11-22 21:01:47,128 INFO [curiobot.curiobot_server] query.plan.args={'topic': 'Bank of America'}
+2025-11-22 21:01:47,128 INFO [curiobot.curiobot_server] query: dispatching to get_news
+2025-11-22 21:01:47,128 INFO [curiobot.curiobot_server] curio Bot MCP Sever - get_news invoked, query=Bank of America, freshness_days=3
+2025-11-22 21:01:48,202 INFO [httpx] HTTP Request: GET https://newsapi.org/v2/everything?q=Bank+of+America&from=2025-11-19&sortBy=publishedAt&pageSize=5&language=en&apiKey=2fb7d40cd7564ada9d706309704ebac5 "HTTP/1.1 200 OK"
+2025-11-22 21:01:48,203 INFO [mcp.server.lowlevel.server] Warning: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-11-22 21:01:48,205 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-23 13:20:17,520 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 13:20:17,531 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 13:20:17,576 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 13:26:16,931 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 13:26:16,931 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 13:26:16,931 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 13:26:16,942 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 13:26:16,942 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 13:26:16,931 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 13:26:16,942 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 13:26:16,932 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 13:26:16,942 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 13:26:16,942 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 13:26:16,978 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 13:26:16,978 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 13:26:16,978 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 13:26:16,978 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 13:26:16,979 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 13:32:37,286 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 13:32:37,286 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 13:32:37,297 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 13:32:37,297 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 13:32:37,286 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 13:32:37,288 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 13:32:37,297 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 13:32:37,297 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 13:32:37,306 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 13:32:37,306 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 13:32:37,334 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 13:32:37,334 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 13:32:37,334 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 13:32:37,334 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 13:32:37,342 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:02:43,232 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:02:43,232 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:02:43,233 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:02:43,243 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:02:43,243 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:02:43,243 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:02:43,233 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:02:43,233 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:02:43,244 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:02:43,244 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:02:43,283 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:02:43,283 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:02:43,283 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:02:43,283 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:02:43,283 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:03:02,480 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:03:02,480 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:03:02,484 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:03:02,484 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:03:02,484 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:03:02,484 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:03:02,485 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:03:02,485 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:03:02,521 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:03:02,524 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:03:02,525 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:03:02,525 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:03:02,739 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:03:02,739 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:03:02,771 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:03:29,564 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-23 14:03:33,364 INFO [mcp.server.lowlevel.server] Processing request of type CallToolRequest
+2025-11-23 14:03:33,365 INFO [curiobot.curiobot_server] curio Bot MCP Sever - query tool invoked for question=What's the latest news about Westpac
+2025-11-23 14:03:33,365 INFO [curiobot.router] LLMRouter.route called for question=What's the latest news about Westpac
+2025-11-23 14:03:33,365 INFO [curiobot.router] LLMRouter.provider=openai
+2025-11-23 14:03:33,365 INFO [curiobot.router] LLMRouter - Calling OpenAI LLM with model=gpt-4o-mini
+2025-11-23 14:03:35,876 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-23 14:03:35,883 INFO [curiobot.router] LLMRouter plan={'tool': 'get_news', 'args': {'query': 'Westpac'}, 'reason': 'The user is looking for the latest news about a specific bank.'}
+2025-11-23 14:03:35,883 INFO [curiobot.curiobot_server] query.plan.toolname=get_news
+2025-11-23 14:03:35,883 INFO [curiobot.curiobot_server] query.plan.args={'query': 'Westpac'}
+2025-11-23 14:03:35,883 INFO [curiobot.curiobot_server] query: dispatching to get_news
+2025-11-23 14:03:35,883 INFO [curiobot.curiobot_server] curio Bot MCP Sever - get_news invoked, query=Westpac, freshness_days=3
+2025-11-23 14:03:36,289 INFO [httpx] HTTP Request: GET https://newsapi.org/v2/everything?q=Westpac&from=2025-11-20&sortBy=publishedAt&pageSize=5&language=en&apiKey=2fb7d40cd7564ada9d706309704ebac5 "HTTP/1.1 200 OK"
+2025-11-23 14:03:36,294 INFO [mcp.server.lowlevel.server] Warning: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-11-23 14:03:36,307 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-23 14:08:39,632 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:08:39,633 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:08:39,643 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:08:39,643 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:08:39,639 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:08:39,644 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:08:39,644 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:08:39,644 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:08:39,653 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:08:39,653 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:08:39,682 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:08:39,682 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:08:39,682 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:08:39,683 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:08:39,692 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:09:22,484 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:09:22,485 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:09:22,486 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:09:22,486 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:09:22,487 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:09:22,487 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:09:22,487 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:09:22,487 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:09:22,522 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:09:22,524 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:09:22,524 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:09:22,525 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:09:22,752 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:09:22,752 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:09:22,781 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:11:17,355 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:11:17,355 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:11:17,356 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:11:17,356 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:11:17,359 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:11:17,359 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:11:17,364 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:11:17,364 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:11:17,394 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:11:17,396 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:11:17,397 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:11:17,404 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:11:17,729 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:11:17,729 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:11:17,761 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:11:37,670 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-23 14:11:41,024 INFO [mcp.server.lowlevel.server] Processing request of type CallToolRequest
+2025-11-23 14:11:41,025 INFO [curiobot.curiobot_server] curio Bot MCP Sever - query tool invoked for question=whats the latest news about Westpac?
+2025-11-23 14:11:41,025 INFO [curiobot.router] LLMRouter.route called for question=whats the latest news about Westpac?
+2025-11-23 14:11:41,025 INFO [curiobot.router] LLMRouter.provider=openai
+2025-11-23 14:11:41,025 INFO [curiobot.router] LLMRouter - Calling OpenAI LLM with model=gpt-4o-mini
+2025-11-23 14:11:44,081 INFO [httpx] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-23 14:11:44,095 INFO [curiobot.router] LLMRouter plan={'tool': 'get_news', 'args': {'query': 'Westpac'}, 'reason': 'The user is asking for the latest news, which is best sourced from the news tool.'}
+2025-11-23 14:11:44,095 INFO [curiobot.curiobot_server] query.plan.toolname=get_news
+2025-11-23 14:11:44,095 INFO [curiobot.curiobot_server] query.plan.args={'query': 'Westpac'}
+2025-11-23 14:11:44,095 INFO [curiobot.curiobot_server] query: dispatching to get_news
+2025-11-23 14:11:44,095 INFO [curiobot.curiobot_server] curio Bot MCP Sever - get_news invoked, query=Westpac, freshness_days=3
+2025-11-23 14:11:44,575 INFO [httpx] HTTP Request: GET https://newsapi.org/v2/everything?q=Westpac&from=2025-11-20&sortBy=publishedAt&pageSize=5&language=en&apiKey=2fb7d40cd7564ada9d706309704ebac5 "HTTP/1.1 200 OK"
+2025-11-23 14:11:44,579 INFO [mcp.server.lowlevel.server] Warning: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-11-23 14:11:44,583 INFO [mcp.server.lowlevel.server] Processing request of type ListToolsRequest
+2025-11-23 14:16:03,692 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:16:03,692 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:16:03,692 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:16:03,693 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:16:03,699 INFO [curiobot.router] LLMRouter init: provider=openai
+2025-11-23 14:16:03,702 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:16:03,703 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:16:03,702 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:16:03,703 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:16:03,703 INFO [curiobot.router] LLMRouter: initializing OpenAI client
+2025-11-23 14:16:03,742 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:16:03,742 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:16:03,742 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:16:03,743 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
+2025-11-23 14:16:03,743 INFO [curiobot.curiobot_server] MCP CurioBot server starting…
