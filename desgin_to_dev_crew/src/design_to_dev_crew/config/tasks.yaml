@@ -1,0 +1,168 @@
+# 1) High-level design from requirements
+design_backend_frontend:
+  agent: development_lead
+  description: >
+    You are the Development Lead. Take the following high-level requirements and
+    produce a clear, detailed technical design for both the backend and frontend.
+
+    Requirements:
+    {requirements}
+
+    Include:
+    - Overall system architecture and main responsibilities.
+    - Module structure:
+      - Frontend module name: {frontend_module_name}
+      - Backend module name: {backend_module_name}
+    - For the backend (Spring Boot, package prefix {package_name_prefix}):
+      - Package structure.
+      - Main classes and interfaces.
+      - Important method signatures with parameters and return types.
+      - REST endpoints (paths, HTTP methods, request/response models).
+    - For the frontend (modern JavaScript framework):
+      - Folder structure (pages/views, components, services/API clients, utils).
+      - Main components and their responsibilities.
+      - How the frontend will call the backend APIs.
+      - State management and error handling approach.
+
+    Be concrete and implementation-ready so a mid-level developer could start coding.
+  expected_output: >
+    A structured technical design document with sections for:
+    - Architecture overview
+    - Backend (packages, classes, methods, endpoints)
+    - Frontend (folders, components, API calls, flows)
+
+# 2) Backend implementation skeleton based on design
+implement_backend:
+  agent: backend_developer
+  description: >
+    You are the Backend Developer.
+
+    Use the following technical design from the Development Lead to create the
+    backend implementation skeleton for the module {backend_module_name}:
+
+    DESIGN:
+    {{ design_backend_frontend.output }}
+
+    Produce:
+    - Suggested Maven/Gradle module structure for {backend_module_name}.
+    - Java package structure using prefix {package_name_prefix}.
+    - Class skeletons for:
+      - Controllers
+      - Services
+      - Repositories
+      - Configuration
+      - DTOs and Entities
+    - Method signatures for key operations (with Java types).
+    - Example REST controller classes with Spring annotations.
+    - Any necessary configuration notes (e.g. application.properties keys).
+    
+    Focus on clean architecture, separation of concerns, and testability.
+  expected_output: >
+    Backend Spring Boot skeleton:
+    - Package tree
+    - Class and interface definitions
+    - Method signatures
+    - Example REST controllers and DTOs
+    - ReadMe.md for the backend module with the details of the module and instructions on how to run the module.
+
+# 3) Frontend implementation skeleton based on design
+implement_frontend:
+  agent: frontend_developer
+  description: >
+    You are the Frontend Developer.
+
+    Use the following technical design from the Development Lead to create the
+    frontend implementation skeleton for the module {frontend_module_name}:
+
+    DESIGN:
+    {{ design_backend_frontend.output }}
+
+    Produce:
+    - Folder structure (e.g. src/components, src/pages, src/services, src/hooks, src/utils).
+    - Main React/Vue components (or equivalent) and their responsibilities.
+    - API client/service layer methods to call the backend endpoints described in the design.
+    - Example code skeletons for:
+      - A main page/screen.
+      - A form or list view interacting with backend APIs.
+      - Error and loading state handling.
+    - Suggestions for state management (Context/Redux/Pinia/etc.).
+    
+    Focus on clarity, reusability, and easy extension of the UI later.
+  expected_output: >
+    Frontend skeleton:
+    - Folder structure
+    - Component list with responsibilities
+    - Example component and API service code stubs
+    - ReadMe.md for the frontend module with the details of the module and instructions to run the module.
+
+# 4) Test strategy and example tests
+create_test_plan:
+  agent: tester
+  description: >
+    You are the QA/Test Engineer.
+
+    Based on the requirements, design, and initial backend/frontend skeletons,
+    create a thorough test strategy and example tests.
+
+    Requirements:
+    {requirements}
+
+    DESIGN:
+    {{ design_backend_frontend.output }}
+
+    BACKEND SKELETON:
+    {{ implement_backend.output }}
+
+    FRONTEND SKELETON:
+    {{ implement_frontend.output }}
+
+    Produce:
+    - Overall test strategy (unit, integration, end-to-end/acceptance).
+    - Backend tests:
+      - Unit tests (JUnit/Mockito) for services and controllers.
+      - Integration tests for key REST endpoints.
+      - Edge cases and error scenarios.
+    - Frontend tests:
+      - Component tests (Jest/Vitest/React Testing Library/Vue Test Utils).
+      - API interaction tests and error handling.
+      - Key user flows (happy path + failures).
+    - Test cases in a clear format (e.g. Given/When/Then or Steps + Expected Result).
+    - Example test code skeletons for both backend and frontend.
+
+  expected_output: >
+    A structured test plan plus example test case definitions and code skeletons
+    for backend (JUnit) and frontend (Jest/Vitest or similar).
+
+# 5) Peer review of design & implementation
+peer_review_solution:
+  agent: peer_reviewer
+  description: >
+    You are the Senior Engineer performing peer review.
+
+    Review the following artefacts:
+    - Technical design:
+      {{ design_backend_frontend.output }}
+
+    - Backend skeleton:
+      {{ implement_backend.output }}
+
+    - Frontend skeleton:
+      {{ implement_frontend.output }}
+
+    - Test plan:
+      {{ create_test_plan.output }}
+
+    Tasks:
+    - Identify any issues, inconsistencies, or missing parts in the design.
+    - Check that the backend and frontend interfaces (REST APIs, DTOs) align.
+    - Evaluate code structure, naming, and adherence to best practices.
+    - Assess the completeness and robustness of the test strategy.
+    - Propose concrete improvements.
+    - Provide improved/adjusted snippets or revised structures where needed.
+
+    Be detailed, constructive, and specific. Avoid vague feedback.
+  expected_output: >
+    A review report with:
+    - Summary of strengths and weaknesses
+    - Specific actionable feedback grouped by design/backend/frontend/tests
+    - Suggested improvements and revised examples where helpful

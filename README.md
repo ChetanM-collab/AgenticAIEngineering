@@ -1,6 +1,6 @@
 # AgenticAIEngineering
 
-A collection of small, focused projects exploring modern **Agentic AI** concepts.  
+A collection of small, focused projects exploring modern **Agentic AI** concepts/frame-works.  
 Each folder contains an independent project demonstrating different areas of **agent-based LLM systems**, routing, MCP tooling, and autonomous AI patterns.
 
 This repository serves as a practical portfolio of my learning journey in building real, production-ready Agentic AI systems.
@@ -66,7 +66,7 @@ crewai
 
 ## 🙌 Acknowledgements
 
-Special thanks to @ed-donner for creating an exceptional foundation for understanding and implementing modern Agentic AI systems.  
+Special thanks to [@ed-donner](https://github.com/ed-donner) for creating an exceptional foundation for understanding and implementing modern Agentic AI systems.  
 His course played a central role in shaping the ideas and demos in this repository.
 
 ---
